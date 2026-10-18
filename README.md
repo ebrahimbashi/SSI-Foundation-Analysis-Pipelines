@@ -19,7 +19,7 @@ Production Python automation and batch scripting codebase supporting the MSc The
 ### 03_Comparative_Visualization_Tools/
 * **`01_generate_2d_cutline_plots.py` & `02_generate_3d_surface_plots.py`**: Renders publication-quality 2D cross-sectional cutline curves and side-by-side 3D surface comparative visualizers.
 * **`03_generate_master_docx_tables.py`**: Automates the generation of formatted Word (.docx) comparative data tables across 7 evaluation axes.
-
+ 
 ## 📦 Python Dependencies
 ```bash
 pip install numpy pandas scipy matplotlib shapely python-docx openpyxl plxscripting
