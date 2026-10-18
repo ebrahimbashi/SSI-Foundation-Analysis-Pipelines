@@ -1,0 +1,448 @@
+# ------------------------------------------------------------------------------
+# STEP 1: CREATE MAT SLAB GEOMETRY (COUNTER-CLOCKWISE, OUTWARD EDGES)
+# ------------------------------------------------------------------------------
+surface 31 -1 -3 31 21 -3 -1 21 -3 -1 -1 -3
+
+# Target-rename the main plate object
+rename Surface_1 "Mat_Foundation"
+
+# Lock native alignment vector
+set Mat_Foundation.AxisFunction "manual"
+set Mat_Foundation.AxisVectorX 1
+set Mat_Foundation.AxisVectorY 0
+set Mat_Foundation.AxisVectorZ 0
+
+
+# ------------------------------------------------------------------------------
+# STEP 2: CREATE 35 COLUMN PATCHES (0.9x0.9m ON )
+# ------------------------------------------------------------------------------
+
+# === GRID ROW 1 (Y = 0) ===
+surface (0.45 -0.45 -3) (0.45 0.45 -3) (-0.45 0.45 -3) (-0.45 -0.45 -3)
+surface (5.45 -0.45 -3) (5.45 0.45 -3) (4.55 0.45 -3) (4.55 -0.45 -3)
+surface (10.45 -0.45 -3) (10.45 0.45 -3) (9.55 0.45 -3) (9.55 -0.45 -3)
+surface (15.45 -0.45 -3) (15.45 0.45 -3) (14.55 0.45 -3) (14.55 -0.45 -3)
+surface (20.45 -0.45 -3) (20.45 0.45 -3) (19.55 0.45 -3) (19.55 -0.45 -3)
+surface (25.45 -0.45 -3) (25.45 0.45 -3) (24.55 0.45 -3) (24.55 -0.45 -3)
+surface (30.45 -0.45 -3) (30.45 0.45 -3) (29.55 0.45 -3) (29.55 -0.45 -3)
+
+# === GRID ROW 2 (Y = 5) ===
+surface (0.45 4.55 -3) (0.45 5.45 -3) (-0.45 5.45 -3) (-0.45 4.55 -3)
+surface (5.45 4.55 -3) (5.45 5.45 -3) (4.55 5.45 -3) (4.55 4.55 -3)
+surface (10.45 4.55 -3) (10.45 5.45 -3) (9.55 5.45 -3) (9.55 4.55 -3)
+surface (15.45 4.55 -3) (15.45 5.45 -3) (14.55 5.45 -3) (14.55 4.55 -3)
+surface (20.45 4.55 -3) (20.45 5.45 -3) (19.55 5.45 -3) (19.55 4.55 -3)
+surface (25.45 4.55 -3) (25.45 5.45 -3) (24.55 5.45 -3) (24.55 4.55 -3)
+surface (30.45 4.55 -3) (30.45 5.45 -3) (29.55 5.45 -3) (29.55 4.55 -3)
+
+# === GRID ROW 3 (Y = 10) ===
+surface (0.45 9.55 -3) (0.45 10.45 -3) (-0.45 10.45 -3) (-0.45 9.55 -3)
+surface (5.45 9.55 -3) (5.45 10.45 -3) (4.55 10.45 -3) (4.55 9.55 -3)
+surface (10.45 9.55 -3) (10.45 10.45 -3) (9.55 10.45 -3) (9.55 9.55 -3)
+surface (15.45 9.55 -3) (15.45 10.45 -3) (14.55 10.45 -3) (14.55 9.55 -3)
+surface (20.45 9.55 -3) (20.45 10.45 -3) (19.55 10.45 -3) (19.55 9.55 -3)
+surface (25.45 9.55 -3) (25.45 10.45 -3) (24.55 10.45 -3) (24.55 9.55 -3)
+surface (30.45 9.55 -3) (30.45 10.45 -3) (29.55 10.45 -3) (29.55 9.55 -3)
+
+# === GRID ROW 4 (Y = 15) ===
+surface (0.45 14.55 -3) (0.45 15.45 -3) (-0.45 15.45 -3) (-0.45 14.55 -3)
+surface (5.45 14.55 -3) (5.45 15.45 -3) (4.55 15.45 -3) (4.55 14.55 -3)
+surface (10.45 14.55 -3) (10.45 15.45 -3) (9.55 15.45 -3) (9.55 14.55 -3)
+surface (15.45 14.55 -3) (15.45 15.45 -3) (14.55 15.45 -3) (14.55 14.55 -3)
+surface (20.45 14.55 -3) (20.45 15.45 -3) (19.55 15.45 -3) (19.55 14.55 -3)
+surface (25.45 14.55 -3) (25.45 15.45 -3) (24.55 15.45 -3) (24.55 14.55 -3)
+surface (30.45 14.55 -3) (30.45 15.45 -3) (29.55 15.45 -3) (29.55 14.55 -3)
+
+# === GRID ROW 5 (Y = 20) ===
+surface (0.45 19.55 -3) (0.45 20.45 -3) (-0.45 20.45 -3) (-0.45 19.55 -3)
+surface (5.45 19.55 -3) (5.45 20.45 -3) (4.55 20.45 -3) (4.55 19.55 -3)
+surface (10.45 19.55 -3) (10.45 20.45 -3) (9.55 20.45 -3) (9.55 19.55 -3)
+surface (15.45 19.55 -3) (15.45 20.45 -3) (14.55 20.45 -3) (14.55 19.55 -3)
+surface (20.45 19.55 -3) (20.45 20.45 -3) (19.55 20.45 -3) (19.55 19.55 -3)
+surface (25.45 19.55 -3) (25.45 20.45 -3) (24.55 20.45 -3) (24.55 19.55 -3)
+surface (30.45 19.55 -3) (30.45 20.45 -3) (29.55 20.45 -3) (29.55 19.55 -3)
+
+
+# ==============================================================================
+# PLAXIS 3D COMMAND RUNNER - SERVICE LOAD COMBINATION (PHASE_3)
+# SIGN CONVENTION: INVERTED MOMENTS CONFIGURATION [sigz_inc = -(M/I)]
+# ==============================================================================
+
+# === ROW (Y = 0.0 m) ===
+
+# --- Column 1 (SurfaceLoad_1_1)
+set SurfaceLoad_1_1.Distribution Phase_3 "Free increment"
+set SurfaceLoad_1_1.sigz Phase_3 -2586.14
+set SurfaceLoad_1_1.Xref Phase_3 0.0
+set SurfaceLoad_1_1.Yref Phase_3 0.0
+set SurfaceLoad_1_1.sigz_inc_x Phase_3 -247.88
+set SurfaceLoad_1_1.sigz_inc_y Phase_3 247.88
+set SurfaceLoad_1_1.Active Phase_3 True
+
+# --- Column 6 (SurfaceLoad_2_1)
+set SurfaceLoad_2_1.Distribution Phase_3 "Free increment"
+set SurfaceLoad_2_1.sigz Phase_3 -3942.60
+set SurfaceLoad_2_1.Xref Phase_3 5.0
+set SurfaceLoad_2_1.Yref Phase_3 0.0
+set SurfaceLoad_2_1.sigz_inc_x Phase_3 -0.76
+set SurfaceLoad_2_1.sigz_inc_y Phase_3 437.37
+set SurfaceLoad_2_1.Active Phase_3 True
+
+# --- Column 7 (SurfaceLoad_3_1)
+set SurfaceLoad_3_1.Distribution Phase_3 "Free increment"
+set SurfaceLoad_3_1.sigz Phase_3 -3981.66
+set SurfaceLoad_3_1.Xref Phase_3 10.0
+set SurfaceLoad_3_1.Yref Phase_3 0.0
+set SurfaceLoad_3_1.sigz_inc_x Phase_3 -0.18
+set SurfaceLoad_3_1.sigz_inc_y Phase_3 437.26
+set SurfaceLoad_3_1.Active Phase_3 True
+
+# --- Column 8 (SurfaceLoad_4_1)
+set SurfaceLoad_4_1.Distribution Phase_3 "Free increment"
+set SurfaceLoad_4_1.sigz Phase_3 -3981.38
+set SurfaceLoad_4_1.Xref Phase_3 15.0
+set SurfaceLoad_4_1.Yref Phase_3 0.0
+set SurfaceLoad_4_1.sigz_inc_x Phase_3 -0.00
+set SurfaceLoad_4_1.sigz_inc_y Phase_3 437.28
+set SurfaceLoad_4_1.Active Phase_3 True
+
+# --- Column 9 (SurfaceLoad_5_1)
+set SurfaceLoad_5_1.Distribution Phase_3 "Free increment"
+set SurfaceLoad_5_1.sigz Phase_3 -3981.66
+set SurfaceLoad_5_1.Xref Phase_3 20.0
+set SurfaceLoad_5_1.Yref Phase_3 0.0
+set SurfaceLoad_5_1.sigz_inc_x Phase_3 0.18
+set SurfaceLoad_5_1.sigz_inc_y Phase_3 437.26
+set SurfaceLoad_5_1.Active Phase_3 True
+
+# --- Column 10 (SurfaceLoad_6_1)
+set SurfaceLoad_6_1.Distribution Phase_3 "Free increment"
+set SurfaceLoad_6_1.sigz Phase_3 -3942.60
+set SurfaceLoad_6_1.Xref Phase_3 25.0
+set SurfaceLoad_6_1.Yref Phase_3 0.0
+set SurfaceLoad_6_1.sigz_inc_x Phase_3 0.76
+set SurfaceLoad_6_1.sigz_inc_y Phase_3 437.36
+set SurfaceLoad_6_1.Active Phase_3 True
+
+# --- Column 11 (SurfaceLoad_7_1)
+set SurfaceLoad_7_1.Distribution Phase_3 "Free increment"
+set SurfaceLoad_7_1.sigz Phase_3 -2586.14
+set SurfaceLoad_7_1.Xref Phase_3 30.0
+set SurfaceLoad_7_1.Yref Phase_3 0.0
+set SurfaceLoad_7_1.sigz_inc_x Phase_3 247.88
+set SurfaceLoad_7_1.sigz_inc_y Phase_3 247.88
+set SurfaceLoad_7_1.Active Phase_3 True
+
+
+# === ROW (Y = 5.0 m) ===
+
+# --- Column 2 (SurfaceLoad_8_1)
+set SurfaceLoad_8_1.Distribution Phase_3 "Free increment"
+set SurfaceLoad_8_1.sigz Phase_3 -3942.64
+set SurfaceLoad_8_1.Xref Phase_3 0.0
+set SurfaceLoad_8_1.Yref Phase_3 5.0
+set SurfaceLoad_8_1.sigz_inc_x Phase_3 -437.37
+set SurfaceLoad_8_1.sigz_inc_y Phase_3 0.76
+set SurfaceLoad_8_1.Active Phase_3 True
+
+# --- Column 31 (SurfaceLoad_9_1)
+set SurfaceLoad_9_1.Distribution Phase_3 "Free increment"
+set SurfaceLoad_9_1.sigz Phase_3 -6253.50
+set SurfaceLoad_9_1.Xref Phase_3 5.0
+set SurfaceLoad_9_1.Yref Phase_3 5.0
+set SurfaceLoad_9_1.sigz_inc_x Phase_3 -1.11
+set SurfaceLoad_9_1.sigz_inc_y Phase_3 1.12
+set SurfaceLoad_9_1.Active Phase_3 True
+
+# --- Column 32 (SurfaceLoad_10_1)
+set SurfaceLoad_10_1.Distribution Phase_3 "Free increment"
+set SurfaceLoad_10_1.sigz Phase_3 -6330.92
+set SurfaceLoad_10_1.Xref Phase_3 10.0
+set SurfaceLoad_10_1.Yref Phase_3 5.0
+set SurfaceLoad_10_1.sigz_inc_x Phase_3 -0.38
+set SurfaceLoad_10_1.sigz_inc_y Phase_3 1.23
+set SurfaceLoad_10_1.Active Phase_3 True
+
+# --- Column 33 (SurfaceLoad_11_1)
+set SurfaceLoad_11_1.Distribution Phase_3 "Free increment"
+set SurfaceLoad_11_1.sigz Phase_3 -6330.63
+set SurfaceLoad_11_1.Xref Phase_3 15.0
+set SurfaceLoad_11_1.Yref Phase_3 5.0
+set SurfaceLoad_11_1.sigz_inc_x Phase_3 -0.00
+set SurfaceLoad_11_1.sigz_inc_y Phase_3 1.24
+set SurfaceLoad_11_1.Active Phase_3 True
+
+# --- Column 34 (SurfaceLoad_12_1)
+set SurfaceLoad_12_1.Distribution Phase_3 "Free increment"
+set SurfaceLoad_12_1.sigz Phase_3 -6330.92
+set SurfaceLoad_12_1.Xref Phase_3 20.0
+set SurfaceLoad_12_1.Yref Phase_3 5.0
+set SurfaceLoad_12_1.sigz_inc_x Phase_3 0.38
+set SurfaceLoad_12_1.sigz_inc_y Phase_3 1.23
+set SurfaceLoad_12_1.Active Phase_3 True
+
+# --- Column 35 (SurfaceLoad_13_1)
+set SurfaceLoad_13_1.Distribution Phase_3 "Free increment"
+set SurfaceLoad_13_1.sigz Phase_3 -6253.50
+set SurfaceLoad_13_1.Xref Phase_3 25.0
+set SurfaceLoad_13_1.Yref Phase_3 5.0
+set SurfaceLoad_13_1.sigz_inc_x Phase_3 1.11
+set SurfaceLoad_13_1.sigz_inc_y Phase_3 1.12
+set SurfaceLoad_13_1.Active Phase_3 True
+
+# --- Column 12 (SurfaceLoad_14_1)
+set SurfaceLoad_14_1.Distribution Phase_3 "Free increment"
+set SurfaceLoad_14_1.sigz Phase_3 -3942.64
+set SurfaceLoad_14_1.Xref Phase_3 30.0
+set SurfaceLoad_14_1.Yref Phase_3 5.0
+set SurfaceLoad_14_1.sigz_inc_x Phase_3 437.37
+set SurfaceLoad_14_1.sigz_inc_y Phase_3 0.76
+set SurfaceLoad_14_1.Active Phase_3 True
+
+
+# === ROW (Y = 10.0 m) ===
+
+# --- Column 3 (SurfaceLoad_15_1)
+set SurfaceLoad_15_1.Distribution Phase_3 "Free increment"
+set SurfaceLoad_15_1.sigz Phase_3 -3982.02
+set SurfaceLoad_15_1.Xref Phase_3 0.0
+set SurfaceLoad_15_1.Yref Phase_3 10.0
+set SurfaceLoad_15_1.sigz_inc_x Phase_3 -437.25
+set SurfaceLoad_15_1.sigz_inc_y Phase_3 -0.00
+set SurfaceLoad_15_1.Active Phase_3 True
+
+# --- Column 26 (SurfaceLoad_16_1)
+set SurfaceLoad_16_1.Distribution Phase_3 "Free increment"
+set SurfaceLoad_16_1.sigz Phase_3 -6331.28
+set SurfaceLoad_16_1.Xref Phase_3 5.0
+set SurfaceLoad_16_1.Yref Phase_3 10.0
+set SurfaceLoad_16_1.sigz_inc_x Phase_3 -1.21
+set SurfaceLoad_16_1.sigz_inc_y Phase_3 -0.00
+set SurfaceLoad_16_1.Active Phase_3 True
+
+# --- Column 27 (SurfaceLoad_17_1)
+set SurfaceLoad_17_1.Distribution Phase_3 "Free increment"
+set SurfaceLoad_17_1.sigz Phase_3 -6412.13
+set SurfaceLoad_17_1.Xref Phase_3 10.0
+set SurfaceLoad_17_1.Yref Phase_3 10.0
+set SurfaceLoad_17_1.sigz_inc_x Phase_3 -0.40
+set SurfaceLoad_17_1.sigz_inc_y Phase_3 -0.00
+set SurfaceLoad_17_1.Active Phase_3 True
+
+# --- Column 28 (SurfaceLoad_18_1)
+set SurfaceLoad_18_1.Distribution Phase_3 "Free increment"
+set SurfaceLoad_18_1.sigz Phase_3 -6411.71
+set SurfaceLoad_18_1.Xref Phase_3 15.0
+set SurfaceLoad_18_1.Yref Phase_3 10.0
+set SurfaceLoad_18_1.sigz_inc_x Phase_3 -0.00
+set SurfaceLoad_18_1.sigz_inc_y Phase_3 -0.00
+set SurfaceLoad_18_1.Active Phase_3 True
+
+# --- Column 29 (SurfaceLoad_19_1)
+set SurfaceLoad_19_1.Distribution Phase_3 "Free increment"
+set SurfaceLoad_19_1.sigz Phase_3 -6412.13
+set SurfaceLoad_19_1.Xref Phase_3 20.0
+set SurfaceLoad_19_1.Yref Phase_3 10.0
+set SurfaceLoad_19_1.sigz_inc_x Phase_3 0.40
+set SurfaceLoad_19_1.sigz_inc_y Phase_3 -0.00
+set SurfaceLoad_19_1.Active Phase_3 True
+
+# --- Column 30 (SurfaceLoad_20_1)
+set SurfaceLoad_20_1.Distribution Phase_3 "Free increment"
+set SurfaceLoad_20_1.sigz Phase_3 -6331.28
+set SurfaceLoad_20_1.Xref Phase_3 25.0
+set SurfaceLoad_20_1.Yref Phase_3 10.0
+set SurfaceLoad_20_1.sigz_inc_x Phase_3 1.21
+set SurfaceLoad_20_1.sigz_inc_y Phase_3 -0.00
+set SurfaceLoad_20_1.Active Phase_3 True
+
+# --- Column 13 (SurfaceLoad_21_1)
+set SurfaceLoad_21_1.Distribution Phase_3 "Free increment"
+set SurfaceLoad_21_1.sigz Phase_3 -3982.02
+set SurfaceLoad_21_1.Xref Phase_3 30.0
+set SurfaceLoad_21_1.Yref Phase_3 10.0
+set SurfaceLoad_21_1.sigz_inc_x Phase_3 437.25
+set SurfaceLoad_21_1.sigz_inc_y Phase_3 -0.00
+set SurfaceLoad_21_1.Active Phase_3 True
+
+
+# === ROW (Y = 15.0 m) ===
+
+# --- Column 4 (SurfaceLoad_22_1)
+set SurfaceLoad_22_1.Distribution Phase_3 "Free increment"
+set SurfaceLoad_22_1.sigz Phase_3 -3942.64
+set SurfaceLoad_22_1.Xref Phase_3 0.0
+set SurfaceLoad_22_1.Yref Phase_3 15.0
+set SurfaceLoad_22_1.sigz_inc_x Phase_3 -437.37
+set SurfaceLoad_22_1.sigz_inc_y Phase_3 -0.76
+set SurfaceLoad_22_1.Active Phase_3 True
+
+# --- Column 21 (SurfaceLoad_23_1)
+set SurfaceLoad_23_1.Distribution Phase_3 "Free increment"
+set SurfaceLoad_23_1.sigz Phase_3 -6253.50
+set SurfaceLoad_23_1.Xref Phase_3 5.0
+set SurfaceLoad_23_1.Yref Phase_3 15.0
+set SurfaceLoad_23_1.sigz_inc_x Phase_3 -1.11
+set SurfaceLoad_23_1.sigz_inc_y Phase_3 -1.12
+set SurfaceLoad_23_1.Active Phase_3 True
+
+# --- Column 22 (SurfaceLoad_24_1)
+set SurfaceLoad_24_1.Distribution Phase_3 "Free increment"
+set SurfaceLoad_24_1.sigz Phase_3 -6330.92
+set SurfaceLoad_24_1.Xref Phase_3 10.0
+set SurfaceLoad_24_1.Yref Phase_3 15.0
+set SurfaceLoad_24_1.sigz_inc_x Phase_3 -0.38
+set SurfaceLoad_24_1.sigz_inc_y Phase_3 -1.23
+set SurfaceLoad_24_1.Active Phase_3 True
+
+# --- Column 23 (SurfaceLoad_25_1)
+set SurfaceLoad_25_1.Distribution Phase_3 "Free increment"
+set SurfaceLoad_25_1.sigz Phase_3 -6330.63
+set SurfaceLoad_25_1.Xref Phase_3 15.0
+set SurfaceLoad_25_1.Yref Phase_3 15.0
+set SurfaceLoad_25_1.sigz_inc_x Phase_3 -0.00
+set SurfaceLoad_25_1.sigz_inc_y Phase_3 -1.24
+set SurfaceLoad_25_1.Active Phase_3 True
+
+# --- Column 24 (SurfaceLoad_26_1)
+set SurfaceLoad_26_1.Distribution Phase_3 "Free increment"
+set SurfaceLoad_26_1.sigz Phase_3 -6330.92
+set SurfaceLoad_26_1.Xref Phase_3 20.0
+set SurfaceLoad_26_1.Yref Phase_3 15.0
+set SurfaceLoad_26_1.sigz_inc_x Phase_3 0.38
+set SurfaceLoad_26_1.sigz_inc_y Phase_3 -1.23
+set SurfaceLoad_26_1.Active Phase_3 True
+
+# --- Column 25 (SurfaceLoad_27_1)
+set SurfaceLoad_27_1.Distribution Phase_3 "Free increment"
+set SurfaceLoad_27_1.sigz Phase_3 -6253.50
+set SurfaceLoad_27_1.Xref Phase_3 25.0
+set SurfaceLoad_27_1.Yref Phase_3 15.0
+set SurfaceLoad_27_1.sigz_inc_x Phase_3 1.11
+set SurfaceLoad_27_1.sigz_inc_y Phase_3 -1.12
+set SurfaceLoad_27_1.Active Phase_3 True
+
+# --- Column 14 (SurfaceLoad_28_1)
+set SurfaceLoad_28_1.Distribution Phase_3 "Free increment"
+set SurfaceLoad_28_1.sigz Phase_3 -3942.64
+set SurfaceLoad_28_1.Xref Phase_3 30.0
+set SurfaceLoad_28_1.Yref Phase_3 15.0
+set SurfaceLoad_28_1.sigz_inc_x Phase_3 437.37
+set SurfaceLoad_28_1.sigz_inc_y Phase_3 -0.76
+set SurfaceLoad_28_1.Active Phase_3 True
+
+
+# === ROW (Y = 20.0 m) ===
+
+# --- Column 5 (SurfaceLoad_29_1)
+set SurfaceLoad_29_1.Distribution Phase_3 "Free increment"
+set SurfaceLoad_29_1.sigz Phase_3 -2586.14
+set SurfaceLoad_29_1.Xref Phase_3 0.0
+set SurfaceLoad_29_1.Yref Phase_3 20.0
+set SurfaceLoad_29_1.sigz_inc_x Phase_3 -247.88
+set SurfaceLoad_29_1.sigz_inc_y Phase_3 -247.88
+set SurfaceLoad_29_1.Active Phase_3 True
+
+# --- Column 20 (SurfaceLoad_30_1)
+set SurfaceLoad_30_1.Distribution Phase_3 "Free increment"
+set SurfaceLoad_30_1.sigz Phase_3 -3942.60
+set SurfaceLoad_30_1.Xref Phase_3 5.0
+set SurfaceLoad_30_1.Yref Phase_3 20.0
+set SurfaceLoad_30_1.sigz_inc_x Phase_3 -0.75
+set SurfaceLoad_30_1.sigz_inc_y Phase_3 -437.37
+set SurfaceLoad_30_1.Active Phase_3 True
+
+# --- Column 19 (SurfaceLoad_31_1)
+set SurfaceLoad_31_1.Distribution Phase_3 "Free increment"
+set SurfaceLoad_31_1.sigz Phase_3 -3981.66
+set SurfaceLoad_31_1.Xref Phase_3 10.0
+set SurfaceLoad_31_1.Yref Phase_3 20.0
+set SurfaceLoad_31_1.sigz_inc_x Phase_3 -0.18
+set SurfaceLoad_31_1.sigz_inc_y Phase_3 -437.26
+set SurfaceLoad_31_1.Active Phase_3 True
+
+# --- Column 18 (SurfaceLoad_32_1)
+set SurfaceLoad_32_1.Distribution Phase_3 "Free increment"
+set SurfaceLoad_32_1.sigz Phase_3 -3981.38
+set SurfaceLoad_32_1.Xref Phase_3 15.0
+set SurfaceLoad_32_1.Yref Phase_3 20.0
+set SurfaceLoad_32_1.sigz_inc_x Phase_3 -0.00
+set SurfaceLoad_32_1.sigz_inc_y Phase_3 -437.28
+set SurfaceLoad_32_1.Active Phase_3 True
+
+# --- Column 17 (SurfaceLoad_33_1)
+set SurfaceLoad_33_1.Distribution Phase_3 "Free increment"
+set SurfaceLoad_33_1.sigz Phase_3 -3981.66
+set SurfaceLoad_33_1.Xref Phase_3 20.0
+set SurfaceLoad_33_1.Yref Phase_3 20.0
+set SurfaceLoad_33_1.sigz_inc_x Phase_3 0.18
+set SurfaceLoad_33_1.sigz_inc_y Phase_3 -437.26
+set SurfaceLoad_33_1.Active Phase_3 True
+
+# --- Column 16 (SurfaceLoad_34_1)
+set SurfaceLoad_34_1.Distribution Phase_3 "Free increment"
+set SurfaceLoad_34_1.sigz Phase_3 -3942.60
+set SurfaceLoad_34_1.Xref Phase_3 25.0
+set SurfaceLoad_34_1.Yref Phase_3 20.0
+set SurfaceLoad_34_1.sigz_inc_x Phase_3 0.76
+set SurfaceLoad_34_1.sigz_inc_y Phase_3 -437.37
+set SurfaceLoad_34_1.Active Phase_3 True
+
+# --- Column 15 (SurfaceLoad_35_1)
+set SurfaceLoad_35_1.Distribution Phase_3 "Free increment"
+set SurfaceLoad_35_1.sigz Phase_3 -2586.14
+set SurfaceLoad_35_1.Xref Phase_3 30.0
+set SurfaceLoad_35_1.Yref Phase_3 20.0
+set SurfaceLoad_35_1.sigz_inc_x Phase_3 247.88
+set SurfaceLoad_35_1.sigz_inc_y Phase_3 -247.88
+set SurfaceLoad_35_1.Active Phase_3 True
+
+
+# ==============================================================================
+# PLAXIS 3D PHASE_3 SCRIPT: SETTING SIGZ_INC_Z TO ZERO FOR ALL LOADS
+# ==============================================================================
+
+# === ROW 1 ===
+set SurfaceLoad_1_1.sigz_inc_z Phase_3 0
+set SurfaceLoad_2_1.sigz_inc_z Phase_3 0
+set SurfaceLoad_3_1.sigz_inc_z Phase_3 0
+set SurfaceLoad_4_1.sigz_inc_z Phase_3 0
+set SurfaceLoad_5_1.sigz_inc_z Phase_3 0
+set SurfaceLoad_6_1.sigz_inc_z Phase_3 0
+set SurfaceLoad_7_1.sigz_inc_z Phase_3 0
+
+# === ROW 2 ===
+set SurfaceLoad_8_1.sigz_inc_z Phase_3 0
+set SurfaceLoad_9_1.sigz_inc_z Phase_3 0
+set SurfaceLoad_10_1.sigz_inc_z Phase_3 0
+set SurfaceLoad_11_1.sigz_inc_z Phase_3 0
+set SurfaceLoad_12_1.sigz_inc_z Phase_3 0
+set SurfaceLoad_13_1.sigz_inc_z Phase_3 0
+set SurfaceLoad_14_1.sigz_inc_z Phase_3 0
+
+# === ROW 3 ===
+set SurfaceLoad_15_1.sigz_inc_z Phase_3 0
+set SurfaceLoad_16_1.sigz_inc_z Phase_3 0
+set SurfaceLoad_17_1.sigz_inc_z Phase_3 0
+set SurfaceLoad_18_1.sigz_inc_z Phase_3 0
+set SurfaceLoad_19_1.sigz_inc_z Phase_3 0
+set SurfaceLoad_20_1.sigz_inc_z Phase_3 0
+set SurfaceLoad_21_1.sigz_inc_z Phase_3 0
+
+# === ROW 4 ===
+set SurfaceLoad_22_1.sigz_inc_z Phase_3 0
+set SurfaceLoad_23_1.sigz_inc_z Phase_3 0
+set SurfaceLoad_24_1.sigz_inc_z Phase_3 0
+set SurfaceLoad_25_1.sigz_inc_z Phase_3 0
+set SurfaceLoad_26_1.sigz_inc_z Phase_3 0
+set SurfaceLoad_27_1.sigz_inc_z Phase_3 0
+set SurfaceLoad_28_1.sigz_inc_z Phase_3 0
+
+# === ROW 5 ===
+set SurfaceLoad_29_1.sigz_inc_z Phase_3 0
+set SurfaceLoad_30_1.sigz_inc_z Phase_3 0
+set SurfaceLoad_31_1.sigz_inc_z Phase_3 0
+set SurfaceLoad_32_1.sigz_inc_z Phase_3 0
+set SurfaceLoad_33_1.sigz_inc_z Phase_3 0
+set SurfaceLoad_34_1.sigz_inc_z Phase_3 0
+set SurfaceLoad_35_1.sigz_inc_z Phase_3 0
