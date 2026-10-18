@@ -23,3 +23,8 @@ Production Python automation and batch scripting codebase supporting the MSc The
 ## 📦 Python Dependencies
 ```bash
 pip install numpy pandas scipy matplotlib shapely python-docx openpyxl plxscripting
+---
+## 👤 Author
+**Ebrahim Bashi**  
+MSc Student in Structural Engineering  
+School of Civil and Environmental Engineering, College of Technology and Built Environment, Addis Ababa University.
